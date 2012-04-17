@@ -1,7 +1,7 @@
 Summary:	Infinality font configuration file
 Name:		fontconfig-infinality
 Version:	3.1
-Release:	1.R
+Release:	2.R
 
 License:	GPLv2
 URL:		http://www.infinality.net/
@@ -9,7 +9,6 @@ Group:		System Environment/Libraries
 Source0:	local.conf
 Source1:	infinality-settings.sh
 
-Requires:	libXft-rfremix
 Requires:	cairo-freeworld
 Requires:	freetype-infinality
 
@@ -43,6 +42,9 @@ install -m 644 %{SOURCE1} %{buildroot}/etc/profile.d/
 
 
 %changelog
+* Mon Apr 17 2012 Arkady L. Shane <ashejn@yandex-team.ru> - 3.1-2.R
+- drop R: libXft-rfremix
+
 * Thu Dec  1 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 3.1-1.R
 - update to last infinality snapshot
 
