@@ -1,15 +1,12 @@
 Summary:	Infinality font configuration file
 Name:		fontconfig-infinality
 Version:	3.1
-Release:	3.R
+Release:	4.R
 
 License:	GPLv2
 URL:		http://www.infinality.net/
 Group:		System Environment/Libraries
 Source0:	local.conf
-
-Requires:	cairo-freeworld
-Requires:	freetype-infinality
 
 Provides:	fonts-config = %{version}
 Provides:	infinality-settings
@@ -38,6 +35,9 @@ cp %{SOURCE0} %{buildroot}%{_sysconfdir}/fonts/local.conf
 
 
 %changelog
+* Thu Dec 19 2013 Arkady L. Shane <ashejn@russainfedora.ru> - 3.1-4.R
+- drop obsolete depends
+
 * Mon Apr 17 2012 Arkady L. Shane <ashejn@yandex-team.ru> - 3.1-3.R
 - drop infinality-settings.sh
 
