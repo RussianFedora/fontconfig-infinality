@@ -1,7 +1,7 @@
 Summary:	Infinality font configuration file
 Name:		fontconfig-infinality
 Version:	3.1
-Release:	4.R
+Release:	4%{?dist}
 
 License:	GPLv2
 URL:		http://www.infinality.net/
